@@ -1,0 +1,1 @@
+alter table orders rename column name_of_order to name;

@@ -1,0 +1,19 @@
+== Spring REST Docs
+
+The service running at http://localhost:8081:
+
+include::{snippets}/test-save-order/auto-section.adoc[]
+
+include::{snippets}/test-get-order/auto-section.adoc[]
+
+include::{snippets}/test-edit-order/auto-section.adoc[]
+
+include::{snippets}/test-delete-order/auto-section.adoc[]
+
+include::{snippets}/test-start-order/auto-section.adoc[]
+
+include::{snippets}/test-cancel-order/auto-section.adoc[]
+
+include::{snippets}/test-complete-order/auto-section.adoc[]
+
+include::{snippets}/test-search/auto-section.adoc[]
