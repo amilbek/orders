@@ -12,10 +12,8 @@ import org.springframework.statemachine.transition.Transition;
 public class OrderStateMachineApplicationListener implements StateMachineListener<OrderState, OrderEvent> {
     @Override
     public void stateChanged(State<OrderState, OrderEvent> from, State<OrderState, OrderEvent> to) {
-        if (from.getId() != null) {
-            System.out.println("Transition from status of " + from.getId() +
-                    " to status " + to.getId());
-        }
+        System.out.printf("Transitioned from %s to %s%n", from == null ?
+                "none" : from.getId(), to.getId());
     }
 
     @Override
