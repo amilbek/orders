@@ -68,13 +68,15 @@ public class OrderController {
 
     @PutMapping(value = "/{id}/start")
     public ResponseEntity<Object> startOrder(@PathVariable("id") Long id) {
-        Order order = orderService.startOrder(id);
+        orderService.startOrder(id);
+        Order order = orderService.getOrder(id);
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
 
     @PutMapping(value = "/{id}/complete")
     public ResponseEntity<Object> completeOrder(@PathVariable("id") Long id) {
-        Order order = orderService.completeOrder(id);
+        orderService.completeOrder(id);
+        Order order = orderService.getOrder(id);
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
 
