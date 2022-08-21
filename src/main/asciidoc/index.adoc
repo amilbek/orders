@@ -1,19 +1,42 @@
 == Spring REST Docs
 
+:doctype: book
+:toc:
+:sectanchors:
+:sectlinks:
+:toclevels: 4
+:source-highlighter: highlightjs
+
 The service running at http://localhost:8081:
 
+[[save_order]]
+== Save Order
 include::{snippets}/test-save-order/auto-section.adoc[]
 
+[[get_order]]
+== Get Order
 include::{snippets}/test-get-order/auto-section.adoc[]
 
+[[edit_order]]
+== Edit Order
 include::{snippets}/test-edit-order/auto-section.adoc[]
 
+[[delete_order]]
+== Delete Order
 include::{snippets}/test-delete-order/auto-section.adoc[]
 
+[[start_order]]
+== Start Order
 include::{snippets}/test-start-order/auto-section.adoc[]
 
+[[cancel_order]]
+== Cancel Order
 include::{snippets}/test-cancel-order/auto-section.adoc[]
 
+[[complete_order]]
+== Complete Order
 include::{snippets}/test-complete-order/auto-section.adoc[]
 
+[[search_order]]
+== Search Order
 include::{snippets}/test-search/auto-section.adoc[]
